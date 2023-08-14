@@ -46,6 +46,9 @@ requirements:
         - tomli          # [py<311]
     run:
         - {{ pin_compatible('rdkit', max_pin='x.x') }}
+    run_constrained:
+        - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.14") }}  # [osx and x86_64]
+
 
 test:
     commands:
