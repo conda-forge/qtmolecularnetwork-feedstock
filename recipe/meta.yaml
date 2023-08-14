@@ -22,6 +22,7 @@ build:
 requirements:
     build:
         - cmake
+        - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - make                                # [not win]
         - {{ cdt('mesa-libgl-devel') }}       # [linux]
@@ -32,6 +33,7 @@ requirements:
         - {{ cdt('libxdamage') }}             # [linux]
         - {{ cdt('libxxf86vm') }}             # [linux]
         - {{ cdt('libxext') }}                # [linux]
+        - sysroot_linux-64 2.17               # [linux]
     host:
         - cairo
         - freetype
