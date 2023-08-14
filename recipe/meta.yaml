@@ -1,6 +1,6 @@
 {% set name = "qtmolecularnetwork" if qt == '5' else 'qt6molecularnetwork' %}
 {% set binding_name = "pyside2mn" if qt == '5' else 'pyside6mn' %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
     name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
     sha256: ee67fea252e3a89b6476c982092e293e883007b14166495a4252f752aadd286a
 
 build:
-    number: 2
+    number: 0
     run_exports:
       - {{ pin_subpackage(name, max_pin='x.x.x') }}
     ignore_run_exports_from:
