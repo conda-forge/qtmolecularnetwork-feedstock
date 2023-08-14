@@ -1,5 +1,5 @@
-{% set name = "qtmolecularnetwork" if qt == '5' else 'qt6molecularnetwork' %}
-{% set binding_name = "pyside2mn" if qt == '5' else 'pyside6mn' %}
+{% set name = "qt6molecularnetwork" %}
+{% set binding_name = "pyside6mn" %}
 {% set version = "0.7.0" %}
 
 package:
@@ -25,6 +25,7 @@ requirements:
         - {{ compiler('cxx') }}
         - make                                # [not win]
         - {{ cdt('mesa-libgl-devel') }}       # [linux]
+        - {{ cdt('mesa-libegl-devel') }}      # [linux]
         - {{ cdt('mesa-dri-drivers') }}       # [linux]
         - {{ cdt('libselinux') }}             # [linux]
         - {{ cdt('libxdamage') }}             # [linux]
@@ -35,8 +36,7 @@ requirements:
         - freetype
         - boost-cpp
         - eigen
-        - qt6-main                       # [qt==6 or qt=='']
-        - qt-main                        # [qt==5 or qt=='']
+        - qt6-main
         - {{ pin_compatible('rdkit', max_pin='x.x') }}
         - {{ pin_compatible('rdkit-dev', max_pin='x.x') }}  # [win]
         - versioneer
@@ -55,7 +55,7 @@ test:
 
 outputs:
   - name: {{ name }}
-  - name: {{binding_name }}
+  - name: {{ binding_name }}
     script: build-python.sh  # [unix]
     script: bld-python.bat   # [win]
     build:
@@ -82,11 +82,9 @@ outputs:
         - {{ pin_compatible('rdkit-dev', max_pin='x.x') }}  # [win]
         - {{ pin_compatible('rdkit', max_pin='x.x') }}
         - python
-        - pyside6                       # [qt==6 or qt=='']
-        - pyside2                       # [qt==5 or qt=='']
+        - pyside6
         - cmake-build-extension
-        - {{ pin_compatible('qt6-main', max_pin='x.x') }}  # [qt==6 or qt=='']
-        - {{ pin_compatible('qt-main', max_pin='x.x') }}   # [qt==5 or qt=='']
+        - {{ pin_compatible('qt6-main', max_pin='x.x') }}
         - versioneer
         - eigen
         - pip
@@ -98,15 +96,12 @@ outputs:
         - {{ pin_subpackage(name, exact=True) }}
         - {{ pin_compatible('rdkit', max_pin='x.x') }}
         - pywin32                             # [win]
-        - pyside6                       # [qt==6 or qt=='']
-        - pyside2                       # [qt==5 or qt=='']
+        - pyside6
         - tinycss2
     test:
       imports:
-        - PySide6MolecularNetwork       # [qt==6]
-        - PySide6MolecularNetwork.qmn   # [qt==6]
-        - PySide2MolecularNetwork       # [qt==5]
-        - PySide2MolecularNetwork.qmn   # [qt==5]
+        - PySide6MolecularNetwork
+        - PySide6MolecularNetwork.qmn
 
 about:
     home: https://github.com/metgem/QtMolecularNetwork
