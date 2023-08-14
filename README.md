@@ -31,45 +31,24 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_qt5</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17004&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_qt5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_qt6</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17004&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_qt6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_qt5</td>
+              <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17004&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_qt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_qt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17004&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_qt6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_qt5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17004&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=win&configuration=win%20win_64_qt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_qt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17004&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=win&configuration=win%20win_64_qt6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qtmolecularnetwork-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -85,10 +64,8 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pyside2mn-green.svg)](https://anaconda.org/conda-forge/pyside2mn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyside2mn.svg)](https://anaconda.org/conda-forge/pyside2mn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyside2mn.svg)](https://anaconda.org/conda-forge/pyside2mn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyside2mn.svg)](https://anaconda.org/conda-forge/pyside2mn) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pyside6mn-green.svg)](https://anaconda.org/conda-forge/pyside6mn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyside6mn.svg)](https://anaconda.org/conda-forge/pyside6mn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyside6mn.svg)](https://anaconda.org/conda-forge/pyside6mn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyside6mn.svg)](https://anaconda.org/conda-forge/pyside6mn) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-qt6molecularnetwork-green.svg)](https://anaconda.org/conda-forge/qt6molecularnetwork) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qt6molecularnetwork.svg)](https://anaconda.org/conda-forge/qt6molecularnetwork) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qt6molecularnetwork.svg)](https://anaconda.org/conda-forge/qt6molecularnetwork) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qt6molecularnetwork.svg)](https://anaconda.org/conda-forge/qt6molecularnetwork) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-qtmolecularnetwork-green.svg)](https://anaconda.org/conda-forge/qtmolecularnetwork) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qtmolecularnetwork.svg)](https://anaconda.org/conda-forge/qtmolecularnetwork) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qtmolecularnetwork.svg)](https://anaconda.org/conda-forge/qtmolecularnetwork) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qtmolecularnetwork.svg)](https://anaconda.org/conda-forge/qtmolecularnetwork) |
 
 Installing qt6molecularnetwork
 ==============================
@@ -100,41 +77,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pyside2mn, pyside6mn, qt6molecularnetwork, qtmolecularnetwork` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pyside6mn, qt6molecularnetwork` can be installed with `conda`:
 
 ```
-conda install pyside2mn pyside6mn qt6molecularnetwork qtmolecularnetwork
-```
-
-or with `mamba`:
-
-```
-mamba install pyside2mn pyside6mn qt6molecularnetwork qtmolecularnetwork
-```
-
-It is possible to list all of the versions of `pyside2mn` available on your platform with `conda`:
-
-```
-conda search pyside2mn --channel conda-forge
+conda install pyside6mn qt6molecularnetwork
 ```
 
 or with `mamba`:
 
 ```
-mamba search pyside2mn --channel conda-forge
+mamba install pyside6mn qt6molecularnetwork
+```
+
+It is possible to list all of the versions of `pyside6mn` available on your platform with `conda`:
+
+```
+conda search pyside6mn --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search pyside6mn --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search pyside2mn --channel conda-forge
+mamba repoquery search pyside6mn --channel conda-forge
 
-# List packages depending on `pyside2mn`:
-mamba repoquery whoneeds pyside2mn --channel conda-forge
+# List packages depending on `pyside6mn`:
+mamba repoquery whoneeds pyside6mn --channel conda-forge
 
-# List dependencies of `pyside2mn`:
-mamba repoquery depends pyside2mn --channel conda-forge
+# List dependencies of `pyside6mn`:
+mamba repoquery depends pyside6mn --channel conda-forge
 ```
 
 
