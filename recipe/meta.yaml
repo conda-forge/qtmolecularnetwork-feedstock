@@ -1,6 +1,6 @@
 {% set name = "qt6molecularnetwork" %}
 {% set binding_name = "pyside6mn" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
     name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
     url: https://github.com/metgem/QtMolecularNetwork/archive/v{{ version }}.tar.gz
-    sha256: ee67fea252e3a89b6476c982092e293e883007b14166495a4252f752aadd286a
+    sha256: c173d68b810eb1f9d5399355799574b5c14ba08c1314c0f1032a1a5c42d257ac
 
 build:
-    number: 1
+    number: 0
     run_exports:
       - {{ pin_subpackage(name, max_pin='x.x.x') }}
     ignore_run_exports_from:
