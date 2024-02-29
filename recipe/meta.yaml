@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/metgem/QtMolecularNetwork/archive/v{{ version }}.tar.gz
   sha256: 839938b748ac394419183f1108b5526b73a3cd49be0ae5fd1efbc526f4737394
+  patches:
+    - 0001-setup.patch
 
 build:
   number: 1
