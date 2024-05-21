@@ -9,7 +9,7 @@ source:
   sha256: 47ef9e120fe47c14b82a9b3cf0939c354a33c7d5e138922d3a19e2929efa295c
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('qt6molecularnetwork', max_pin='x.x.x') }}
   ignore_run_exports_from:
@@ -90,6 +90,7 @@ outputs:
         - python
         - cmake-build-extension
         - {{ pin_compatible('pyside6', max_pin='x.x') }}
+        - {{ pin_compatible('qt6-main', max_pin='x.x') }}
         - versioneer
         - eigen
         - libboost-devel
