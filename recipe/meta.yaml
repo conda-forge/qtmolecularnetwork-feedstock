@@ -17,6 +17,9 @@ build:
     - cairo
     - freetype
     - libboost-devel
+    # Just used to make sure that the package is not built for a Qt version
+    # that is not available through pyside6
+    - pyside6
 
 requirements:
   build:
@@ -38,7 +41,10 @@ requirements:
     - freetype
     - libboost-devel
     - eigen
-    - qt6-main
+    - qt6-main {{ version }}
+    # Just used to make sure that the package is not built for a Qt version
+    # that is not available through pyside6
+    - pyside6
     - {{ pin_compatible('rdkit', max_pin='x.x') }}
     - {{ pin_compatible('rdkit-dev', max_pin='x.x') }}      # [win]
     - versioneer
