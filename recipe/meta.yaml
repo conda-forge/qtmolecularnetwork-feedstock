@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/metgem/QtMolecularNetwork/archive/v{{ version }}.tar.gz
-  sha256: 47ef9e120fe47c14b82a9b3cf0939c354a33c7d5e138922d3a19e2929efa295c
+  sha256: 4ab1f91a026b39c44e553a8ff94a865de93fc966ff7edd313ba8bf0422ba50b4
 
 build:
   number: 2
